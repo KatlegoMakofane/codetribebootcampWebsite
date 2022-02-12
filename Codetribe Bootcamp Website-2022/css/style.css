@@ -1,0 +1,76 @@
+#headerTable{
+
+   width:100%;
+ }
+.logo{
+  
+width: 80px;
+}
+
+nav{
+background: blue;
+float:right;
+    margin-right:16px;
+display: inline-block;
+       line-height;80px;
+       margin: 0 5px;
+height:80px; 
+    width:100%;
+}
+
+a{
+   margin-right:16px;
+}
+
+
+nav a{
+        color:black;
+        font-size:50px;
+
+      }
+
+iframe{
+    width:100%;     
+}
+
+#mainTable{
+
+ width:100%;
+}
+#userImage{
+
+     width:50%;
+.BioTable{
+  width: 100%;
+   text-align:left;
+
+
+}
+.btn{
+     padding:16px;
+     border-raduis:10px;
+     font-size:medium;
+}
+
+#FooterTable{
+    background: blue;
+     height:100px;
+ padding:16px;
+
+background: blue;
+float:right;
+    margin-right:16px;
+display: inline-block;
+       line-height;80px;
+       margin: 0 5px;
+height:80px; 
+    width:100%;
+padding:100px;
+}
+
+
+.content{
+
+background: blue;
+padding:100%;
+}
