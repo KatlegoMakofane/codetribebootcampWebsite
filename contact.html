@@ -7,6 +7,151 @@
       <!---The link to the external style sheet--->
       <link rel="stylesheet" href="./css/style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+ <style>
+.footer {
+   position: bottom;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: Orange;
+   color: blue;
+   text-align: center;
+}
+*{
+   margin:0;
+   padding:0;
+   box-sizing:border-box;
+   font-family:'Poppins',sans-serif;
+
+}
+.content{
+
+background: blue;
+padding:100%;
+}
+.contact
+{
+    position: relative;
+    min-height:100vh;
+    padding:50px 100px;
+    display: flex;
+    justify-content:center;
+    align-items:  center;
+    flex-direction: column;
+    background: light-blue;
+    background-size: cover;
+
+}
+.contact .content
+{
+   max-width:800px;
+   text-align:center;
+}
+.contact .content h2
+{
+    font-size:36px;
+    font-weight:500;
+    color:#fff;
+  
+}
+.contact .content p
+{
+  font-weight:300;
+    color:#fff;
+}
+.container
+{   
+    width:100%;
+   display: flex;
+    justify-content:center;
+    
+    margin-top:30px;
+}
+.container .contactInfo
+{   
+    width:50%;
+   display: flex;
+    flex-direction:column;
+}
+.container .contactInfo .box
+{   
+   position: relative;
+    padding:20px 0;
+     display: flex;
+}
+.
+.container .contactInfo .box .icon
+{
+min-width:60px;
+  height:60px;
+  display: flex;
+ background :#fff;
+justify-content:center;
+align-items:  center;
+ border-raduis:50%
+font-size:22px;
+}
+.container .contactInfo .box .text
+{
+display: flex;
+margin-left:20px;
+font-size:16px;
+color :black;
+flex-direction:column;
+font-weight:300;
+}
+.container .contactInfo .box .text h3
+{
+
+font-weight:500;
+color :#00bcd4;
+
+}
+
+.contactForm
+{
+ padding:40px;
+width:40%;
+background :blue;
+
+}
+.contactForm h2
+{
+ font-size:30px;
+ color:#333;
+font-weight:500;
+
+  
+background :blue;
+
+}
+.contactForm .inputBox
+{
+ position: relative;
+ width:100%;
+ margin-top:10px; 
+ 
+
+  
+
+
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea
+{
+ position: relative;
+ width:100%;
+ padding:5px 0;
+  font-size:16px;
+  margin:10px 0;
+  border:none;
+
+  
+
+
+}
+</style>
    </head>
 
         <header>
@@ -68,7 +213,27 @@
                      </div>
                      
                   </div>
-                  
+                <!---The Form where poeple put their informatiom-->
+                  <div class="contactForm">
+                     <form>
+                           <h2>Send Message</h2>
+                           <div class="inputBox">
+                             <input type="text" name="" required="required">
+                             <span>Full name</span>
+                           </div>
+                          <div class="inputBox">
+                             <input type="text" name="" required="required">
+                             <span>Email</span>
+                           </div>
+                           <div class="inputBox">
+                             <textarea  required="required"></textarea>
+                             <span>Type your Meassage....</span>
+                           </div>
+                           <div class="inputBox">
+                             <input type="submit" name="" value="Send">
+                            
+                           </div>
+                       </form>
                </div>
                </div>
             </div>
@@ -76,9 +241,13 @@
         </main>
      
         <footer>
-          <!--table data which holds the footer-->
-            <table id="FooterTable"  >
-       <tr>
+
+                 
+ 
+<div class="footer">
+ 
+<table id="FooterTable" color="white">
+      <tr>
                  <!--table data which holds the logo-->
                  <td width="50%" align="center">
                      <h2  align="center"> About Us </h2>
@@ -95,16 +264,16 @@
                  </td>
                
                  
-                 <td color="blue" width="50%" align="center">
+                 <td color="white" width="50%" align="center">
                       <h2 align="center">Quick Links</h2>
                       <br>
                       <br>
                       <br>
                       <p></p>
                       
-                          <a href="index.html">Home</a><br>
-                          <a href="about.html">About Me</a><br>
-                          <a href="contact.html">Comtact</a><br>
+                          <a href="index.html" color="white">Home</a><br>
+                          <a href="about.html" color="white">About Me</a><br>
+                          <a href="contact.html" color="white">Comtact</a><br>
                           
                           
                       <br>
@@ -127,13 +296,14 @@
 
                       
                       
-                      <p><a href="katlegomakofane3@gmail.com ">katlegomakofane3@gmail.com</a></p>
+                      <p color="white"><a href="katlegomakofane3@gmail.com ">katlegomakofane3@gmail.com</a></p>
                       
                  
                   </td>
       
                </tr>
             </table>
+</div>
         </footer>
    </body>
 
