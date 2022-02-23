@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Codetribe Bootcamp Website</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet"  href="css/all.min.css">
+    <link rel="stylesheet"  href="css/fontawesome.min.css">
+</head>
+
+<body>
+
+    <header>
+        <table id="headerTable">
+
+            <tr>
+                <!-- table data which houses our logo -->
+                <td>
+                    <img class="logo" src="./assets/images/logo.jpg" alt="">
+                </td>
+
+                <!-- table data which houses our nav bar -->
+                <td align="right">
+                    <nav>
+                        <a href="#">Home</a>
+                        <a href="about.html">About me</a>
+                        <a href="contact.html">Contact us</a>
+                    </nav>
+                </td>
+
+            </tr>
+        </table>
+    </header>
+         
+    <main>
+        <!--The main table has a cellpading that adjust the space--->
+        <table id="mainTable" cellpadding="2" >
+
+            <tr>
+                <td colspan="2">
+                     
+                     
+            <video controls poster="./assets/images/new.jpg"
+                        src="./assets/videos/video1.mp4"></video>
+                </td>
+            </tr>
+         
+                
+            <tr> 
+
+                  <td width="50%" align="center">
+                    <br>
+                  <div class="bioBox">
+                      
+             
+                         <h1  align="center" font-size="35px;" id="headerTitle"><b></b></h1>
+                         <p  font-size="30px;"id="bioinfo"><b></b>  </p>
+                           <!---The ID buttoncontainer let's me align the button on the center in the column of the table row---> 
+                             <div id="buttoncontainer">
+                               <!---The purpose of the link is to redirect you to the about page when you press to know more about me-->
+                                <a href="./about.html">
+                                   <button class="btn" >Learn more...</button>
+                                </a>
+                             </div>
+
+                   </div>
+                </td>
+                <td align="center">
+                    <img id="userImage" src="./assets/images/katlego.jpg" alt="">
+                </td>
+                   
+            </tr>
+            
+        </table>
+           <br>
+    </main>
+
+    <footer>
+     <!--The container which carries the footer flex box-->
+     <div class="container">
+        <!--The The about class is about my information with social media links-->
+         <div class="sec aboutus">
+          <h2>About ME</h2><p font-size="30px;">The person"me" on picture known as KATLEGO MAKOFANE is persuing the journey of being a software Developer in the big Technological Industry. He is a reserved person with a quiet personality , he does talk when needed or if topic interest him , he does laugh and play around  .He is smart and like to explore different types of software technology  sometimes uses some of the software to create content,picture or just learn how the object work. More than anything he is lazy but being pushed and motivated he can give you the best results.  
+                            
+                             
+                            </p>
+          
+           <ul class="sci">
+              <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a></li>
+              <li><a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></i></a></li>
+              <li><a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+              <li><a href="https://www.google.com" target="_blank"><i class="fab fa-google"></i></a></li>
+              <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a></li>
+          </ul>
+        </div>
+ 
+      <!--The quickLinks class is about  the  links to pages-->
+      <div class="sec quickLinks">
+         <h2> Quick Links</h2>
+         <ul> 
+            <li><a href="index.html"> <i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a href="about.html"> <i class="fa-solid fa-barcode"></i> About</a></li>
+            <li><a href="contact.html"> <i class="fa-solid fa-address-book"></i> Contact</a></li>
+            <li><a href="index.html"> <i class="fa-solid fa-video"></i> Video</a></li>
+            <li><a href="about.html"> <i class="fa-solid fa-infinity"></i> More Info </a></li>
+            <li><a href="contact.html"> <i class="fa-solid fa-link"></i> Interact</a></li> 
+         </ul>
+      </div>
+
+     <!--The contact class is about  my contact details-->
+      <div class="sec contact">
+         <h2> Contact Info</h2>
+         <ul class="info"> 
+            <li>
+                <span><i class="fa-solid fa-location-dot"></i></span>
+                <span>8670 Reggie Street <br>
+                 Daveyton Gauteng,<br>South Africa</span>
+            </li>
+            <li>
+                <span> <i class="fa-solid fa-phone"></i></i></span>
+                <p><a href="+27787403516"> +27 787403516</a>  <br>
+                  <a href="+27635095309"> +27 635095309</a></p>
+            </li>
+            <li>
+                <span><i class="fa-solid fa-envelope"></i></i></span>
+                <span> <a href="Katlegomakofane3@gmail.com"> Katlegomakofane3@gmail.com</a></p>
+               </span>
+            </li>
+         </ul>
+      </div>
+
+    </div>
+   </footer>
+
+
+   <!--This is a javascript will render the  user information to the ouput-->
+   <script>
+
+    
+   
+            document.getElementById('headerTitle').innerHTML='Katlego Makofane';
+            document.getElementById('bioinfo').innerHTML='The person"me" on picture known as KATLEGO MAKOFANE is persuing the journey of being a software Developer in the big Technological Industry. He is a reserved person with a quiet personality , he does talk when needed or if topic interest him , he does laugh and play around  .He is smart and like to explore different types of software technology  sometimes uses some of the software to create content,picture or just learn how the object work. More than anything he is lazy but being pushed and motivated he can give you the best results. <br> <br>The most important part is that how well he adapt to the environment faster , easily and comfortably  so that he can produce??? much more will be known in person if you meet him ,he can be a bit troublesome...SO TAKE CARE OF HIM';
+            document.getElementById('userImage').src='./assets/images/katlego.jpg';
+   </script>
+
+</body>
+
+</html>
