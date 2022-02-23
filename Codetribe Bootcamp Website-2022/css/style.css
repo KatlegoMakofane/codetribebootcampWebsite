@@ -57,8 +57,10 @@ video {
 }
 #userImage {
     width: 570px;
+    height: 500px;
     margin: 16px;
     border-radius: 100px;
+    
 }
 .bioBox {
     padding :40px;
@@ -97,9 +99,9 @@ video {
    }
  section{
         
-         height:100vh;
+         height:290vh;
          width:100%;
-          background-color:aqua;
+          background-color:powderblue;
          display:flex;
          align-items:center;
          justify-content:center;
@@ -147,64 +149,29 @@ video {
   }
   button[type="submit"]
   {
-  
    width:100%;
    border:none;
    otline:none;
-   padding:20px;
+   padding:5px;
    font-size:20px;
    border-radius:8px;
    font-family:'poppins',sans-serif;
    color:blue;
     text-align:center;
    cursor:pointer;
-   margin-top:10px;
+   margin-top:3px;
    
   }
  button[type="submit"]:hover
   {
     background-color:aqua;
   }
- #status
-  {
-   width:90%;
-   max-width:500px;
-   text-align:center;
-   padding:10px;
-   margin:0 auto;
-   border radius:8px;
  
-  }
-  #status.success
+ .mapouter .
   {
-    background-color:red;
-     animation:status 4s   ease forwards;
-  }
-  #status.error
-  {
-    background-color:red;
-    color:white;
-    animation:status 4s   ease forwards;
-  }
- @ketframes status
-  {
-  0%
-  {
-    opacity:1;
-    pointer-events:all;
-
-  }
-  90%
-  {
-    opacity:1;
-    pointer-events:all;
-  }
-  100%
-  {
-    opacity:0;
-    pointer-events:none;
-  }
-  }
+    width:90%;
+    border radius:8px;
+   }
 
 footer
  {
@@ -350,4 +317,38 @@ footer
      color:white;
    }
 
-  
+  @media (max-withd:991px){
+     header{
+            padding: 50px ;
+           }
+    
+
+       
+        
+          main 
+          {
+           padding: 50px ;
+            flex-direction:column;
+      
+      
+      footer
+      {
+        padding: 50px ;
+      
+      }
+      footer .container
+       {
+         flex-direction:column;
+      
+        }
+      footer .container .sec
+         {
+            margin-right:0;
+            margin-bottom:40px;
+         }
+       footer .container .sec.aboutus,quickLinks,contact
+          {
+            width:100%;
+          }
+ 
+    }
